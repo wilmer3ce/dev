@@ -1,0 +1,8 @@
+.border-example {
+    border: 5px solid rgb(115, 214, 189);
+    border-radius: 50px 10px 25px 10px;
+    border-style: double;
+    padding: 20px;
+    margin-bottom: 100px;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0,3);
+}

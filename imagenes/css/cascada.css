@@ -1,0 +1,74 @@
+body {
+    font-family:  arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 0;
+    width: 100%;
+    text-align: center;
+}
+main {
+    padding: 20px;
+    width: 80%;
+    max-width: 800px;
+}
+.pared {
+    border: 2px solid #4caf50;
+    padding: 10px;
+    margin: 20px 0;
+    background-color: white;
+}
+.child {
+    border: 2px dashed #4caf50;
+    padding: 10px;
+    margin: 10px;
+    background-color: #e0ffe0;
+}    
+.child2 {
+    border: 2px dotted #4caf50;
+    padding: 10px;
+    margin: 10px;
+    background-color: #e0ffe0;
+}
+.child2 p {
+
+   color: #4caf50;
+}
+
+.cascade p {
+    color: #333;
+    font-size: 16px;
+}
+.cascade p.override {
+    color: #4caf50;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.child3  {
+    border: 2px solid#4caf50;
+    padding: 10px;
+    margin: 10px;
+    background-color: #e0ffe0;
+}
+
+
+
+
+ @keyframes slideIn {
+    from {
+        transform: translate(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translate(50);
+        opacity: 1;
+    }
+ }
