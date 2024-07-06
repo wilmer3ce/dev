@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modificar Producto</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Modificar Producto</h1>
+        <nav>
+            <a href="venta.html">Ver Ventas</a>
+        </nav>
+    </header>
+    <main>
+        <section id="modify-section">
+            <h2>Modificar Producto</h2>
+            <form id="modify-form">
+                <input type="hidden" id="modify-index">
+                <input type="text" id="modify-description" placeholder="Descripción del producto" required>
+                <input type="number" id="modify-price" placeholder="Precio" required>
+                <input type="number" id="modify-quantity" placeholder="Cantidad" required>
+                <button type="submit">Guardar Cambios</button>
+            </form>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
