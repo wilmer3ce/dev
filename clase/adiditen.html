@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>listat</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+        }
+        input[type="text"] {
+            width: 80%;
+            padding: 10px;
+            margin: 10px 0;
+        }
+        button {
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            margin-top: 20px;
+        }
+        .grid-item {
+            border: 1px solid #ccc;
+            padding: 10px;
+            border-radius: 5px;
+            background-color: aquamarine;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>hskfbsfbsifb fbb</h1>
+        <input type="text" id="itemInput" placeholder="escribe un nuevo elemento">
+        <button onclick="additem()" >agregar</button>
+        <div class="grid" id="itemGrind"></div>
+    </div>
+
+    <script>
+        function addItem() {
+
+            var itemValue = document.getElementById('itemInput').value;
+
+            if (itemValue.trim() !== "") {
+
+                var newItem = document.createElement('div');
+                newItem.className = 'grid-item';
+                newItem.textContent = itemValue;
+
+                document.getElementById('itemGrid').appendChild(newitem);
+                document.getElementById('itemInput').value = "";
+            } else {
+                alert("por favor escribe un elemnt antesn d agregar.");
+            }
+        }
+    </script>
+    
+
+    
+</body>
+</html>

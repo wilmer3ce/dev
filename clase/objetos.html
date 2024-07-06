@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ejemplo de objetos</title>
+</head>
+<body>
+    <h1> objeyos en java scripr</h1>
+
+
+    <script>
+        var persona = {
+            nombre: "juan",
+            edad: 30,
+            ciudad: "lima",
+            presentarse: Function() {
+                return "hola, mi nombre es:" + this.nombre + ", tengo" + this.edad + " años vivo en " + this.edad + "-";
+            }
+        };
+        document.write("nombre: " + persona.nombre + "<br>");
+        document.write("edad: " + persona.edad + "<br>");
+        document.write("ciudad: " + persona.ciudad);
+
+
+
+        for (var propiedad in peersona) { 
+            if (typeof persona[propiedad]!== "function") {
+                    document.write(propiedad + ": " + persona[propiedad] + "<br>");
+            }
+        }
+        
+        
+
+
+        document.write("<br" + persona.presentarse());
+
+    </script>
+
+
+
+    
+</body>
+</html>

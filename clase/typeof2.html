@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>frutas</title>
+</head>
+<body>
+    <h1>lista de frutas</h1>
+    <ul id="frutas-lista"></ul>
+
+    <script>
+        //declarar un areglo d frutas
+        const frutas = ["manzana", "banana", "naranja", "fresa", "mango"];
+        //obtener el elemnto <ul> donde se mostrara la frutas
+        const lista = document.getElementById("frutas-lista");
+
+        //recorrer el areglo usand el bucle for
+        for (let i = 0; i < frutas.length; i++) {
+            //crer un nuevo elemnto <li> para caa fruta
+            const item = document.createElement("li");
+            //establecer texto del elemento <li> para cada fruta
+            item.textContent = frutas[i];
+            // agregarel elemto <li> a la lista <ul>
+            lista.appendChild(item);
+        }
+    </script>
+    
+</body>
+</html>

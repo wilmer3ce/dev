@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>funciones</title>
+</head>
+<body>
+    <h1>ejemplo de funciones</h1>
+    <script>
+        //definicion de fncion de saludar
+        function saludar(nombre) {
+            return "Hola, " + nombre + "!";
+        }
+        //
+        function sumar(a, b) {
+            return a + b;
+        }
+
+
+        function esPar(numero) {
+            return numero % 2 === 0 ? "par" : "impar" ;
+        }
+
+
+
+        function saludarNombres(nombres) {
+            return nombres.map(function(nombre) {
+                return saludar(nombre);
+            })
+        }
+
+        var restar = function(a, b) {
+            return a - b;
+        };
+
+
+        var multiplicar = (a, b) => a*b;
+    
+
+
+
+        document.write("<h2>saludo</h2>");
+        document.write(saludar("nombre") + "<br>");
+
+
+        document.write("<h2>sumar</h2>");
+        document.write("5 + 3 = " + sumar(5, 3) + "<br>");
+
+        document.write("<h2>par o impar</h2>");
+        document.write("4 es " + esPar(4) +  "<br>");
+        document.write("7 es " + esPar(7) +  "<br>");
+
+
+        document.write("<h2>saludar nombres</h2>");
+        var nombres = ["Ana", "luis", "maria"];
+        var saludos = saludarNombres(nombres);
+        saludos.forEach(function(saludo) {
+            document.write(saludo + "<br>");
+        
+            
+        });
+
+
+        document.write("<h2>resta</h2>");
+        document.write("10 - 4 = " + restar(10, 4) + "<br>");
+
+
+        document.write("<h2>multiplicar</h2>");
+        document.write("6 * 7 = " + multiplicar(6, 7) + "<br>");
+    </script>
+
+    
+</body>
+</html>
