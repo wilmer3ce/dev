@@ -1,0 +1,202 @@
+body {
+  background-image: url('https://cr7wallpapers.com/wp-content/uploads/2014/12/Cristiano-Ronaldo-Nike-wallpaper-2.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  color: #fff;
+
+}
+*{
+  margin: 0; 
+  padding: 0;
+  box-sizing: border-box;
+}
+html{
+  font-size: 62.5%;
+}
+.container{
+  width: 100%;
+  height: 100vh;
+
+  font-family: 'Share Tech', sans-serif;
+  min-width: 1200px;
+  position: relative;
+}
+.logo{
+  font-weight: 600;
+  font-size: 3.8rem;
+}
+nav{
+  padding: 20px 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+ul li{
+  display: inline-block;
+  list-style: none;
+  padding: 3px 10px;
+  font-weight: 300%;
+  font-size: 1.7rem;
+  text-decoration: none;
+
+  transition: all 0.3s ease 0s;
+}
+/*nuevo agregado*/
+ul li:hover{ /*aqui acemos el efecto del al pasar el cursor
+              se va aser sale un retangulo de color negro*/
+  background-color: #979696;
+  border-radius: 25px;
+  text-decoration: none;
+  color: #fff;
+}
+header{
+ position: absolute;
+ bottom: 30%;
+ padding: 0 50px;
+}
+header h1{
+  font-size: 60px;
+}
+.container h2{
+  font-size: 30px;
+}
+header p{
+  font-size: 1.5rem;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+/*nuevo agregado*/
+header button{
+  padding: 0 5px;
+  width: 140px;
+  height: 40px;
+  border: 0;
+  outline: none;
+  color: #080808;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  background-color: #090707;
+  border-radius: 25px;
+  transition: width 0.2s; /*aqui se ase el efecto del inicio de seccion*/
+}
+header button img{
+  display: none;
+}
+button:hover img{
+  display: block;
+}
+header button:hover{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 160px;
+}
+
+.container .emp{
+  position: fixed;
+  height: 600px;
+  width: 800px;
+  right: 7%;
+  bottom: 0;
+  z-index: 999;
+  margin-top: 50px;
+ 
+}
+.container .fondo-emp{
+  position: absolute;
+  height: 700px;
+  width: 550px;
+  right: 50%;
+  bottom: 0;
+}
+img {
+  margin: auto;
+  cursor: pointer;
+  transition: 4s;
+
+}
+/*nuevo agregado*/
+img:hover { /*aqui ise para agrandar y regresar asu forma normal la imagen*/
+  transform: scale(1.1);
+  transition: 4s;
+}
+
+
+header {
+  font-size: 40px;
+}
+.letras{
+  font-size: 25px;
+}
+a {
+  color: #fff;
+  text-decoration: none;
+}
+.container-carousel {
+  margin-left: 900px;
+  position: relative;
+  width: 600px;
+  height: 300px;
+  background-color: none;
+  box-shadow: 0 8px 32px 0 rgb(0, 0, 0, 0.66);
+  border-radius: 15px;
+  overflow: hidden;
+}
+.carruseles {
+  width: 300%;
+  height: 100%;
+  display: flex;
+ 
+ 
+
+}
+.slider-section {
+  width: calc(100% / 3);
+  height: 100%;
+}
+.slider-section img {
+  width: 500px;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+
+}
+.btn-left,
+.btn-right {
+  display: flex;
+  position: absolute;
+  top:50%;
+  font-size: 1.5rem;
+  background-color: transparent;
+  border-radius: 50%;
+  padding: 5px;
+  font-weight: 600;
+  cursor: pointer;
+  color: #0c060681;
+  transform: translate(0, -50%);
+  transition: .5s ease;
+  user-select: none;
+}
+.btn-left:hover,
+.btn-right:hover {
+  background-color: black;
+  color: #fff;
+}
+.btn-right {
+  right: 10px;
+}
+.btn-left {
+  left: 10px;
+}
+.menu > li {
+  float: left;
+  width: 120px;
+  text-align: center;
+}
+li ul {
+  display: none;
+}
+li:hover > ul {
+  display: block;
+}
